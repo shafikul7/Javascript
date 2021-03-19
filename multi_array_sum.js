@@ -1,26 +1,4 @@
-/*
-Write a method multi_array_sum to find (and return) the sum of all the numbers in a 
-multi-dimensional array of integers. A multi-dimensional array is an array for which
-at least some elements are themselves arrays. In this example every array and sub-array
-will only contain integers and/or more sub-arrays.
 
-SAMPLE OUTPUT
-Given a multi-dimensional array:
-a = [1, [2, [3,4]], [5,6] ]
-
-multi_array_sum would return 21.
-
-NOTE
-You may not use the ruby array #flatten method, JavaScript .toString or any other method
-that would coerce arrays into completely different data types or solve the essential
-problem for you. The problem can be solved through manually accessing the arrays by
-indices. You are free to use Python but the test cases are only currently set up to work
-for answers in Ruby or Javascript.
-
-HINT
-This problem should take about 12 lines or less.
-
-*/
 
 function multi_array_sum(arr) {
 	
@@ -50,8 +28,6 @@ function multi_array_sum(arr) {
 	return arraySum;
 }
 
-// set a variable outside of the function to hold the sum and set it to zero to start
-// not sure how to put it in the function and make it work
 var arraySum = 0;
 var a = [1, [2, [3,4]], [5,6] ];
 var result = multi_array_sum( a );
