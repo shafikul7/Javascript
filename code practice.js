@@ -74,3 +74,127 @@ const showMessage = usuarios => {
     console.log(`O ${nome} possui as habilidades: ${habilidades.join(", ")}`);
   }
 };
+
+
+/*
+
+1st problem solving (seerToMon)
+
+*/
+
+// seerToMon function
+function seerToMon(seerInputNumber) {
+    let counter = 0;
+    if (seerInputNumber > counter) {
+        const monCalculated = seerInputNumber / 40;
+        return monCalculated;
+    } else if (seerInputNumber < counter) {
+        //error message 
+        return 'Your input is incorrect ,Please input the 0 greater than Number';
+    } else {
+        //error message 
+        return 'Your input is incorrect';
+    }
+}
+//function called seerToMoon
+let monCount = seerToMon(400);
+// output printed
+console.log(monCount);
+
+
+
+/*
+
+2nd problem solving (totalSales)
+
+*/
+
+// totalSales function
+function totalSales(shirtsquantity, pantsquantity, shoesquantity) {
+    // custom variables
+    const perShirtPrice = 100;
+    const perPantPrice = 200;
+    const perShoePrice = 500;
+    const count = 0;
+
+    if (perShirtPrice > count && perPantPrice > count && perShoePrice > count) {
+        let totalShirtsPrice = shirtsquantity * perShirtPrice;
+        let totalPantsPrice = pantsquantity * perPantPrice;
+        let totalShoesPrice = shoesquantity * perShoePrice;
+
+        let totalSalesPrice = totalShirtsPrice + totalPantsPrice + totalShoesPrice;
+        return totalSalesPrice;
+    } else {
+        //error message
+        return 'Your input is incorrect ,Please input the 0 greater than Number';
+    }
+}
+//function called
+const totalPriceAmount = totalSales(5, 2, 1);
+// output printed
+console.log(totalPriceAmount);
+
+/*
+
+3rd problem solving (deliveryCost)
+
+*/
+
+
+// numberOfShirts function
+function deliveryCost(numberOfShirts) {
+     // custom variables
+    const shirt100 = 100;
+    const shirt200 = 80;
+    const shirt300 = 50;
+    if (numberOfShirts > 0) {
+        if (numberOfShirts <= 100) {
+            let shirtFirstCount = numberOfShirts * shirt100;
+            return shirtFirstCount;
+        } else if (numberOfShirts <= 200) {
+            const firstCount = 100 * shirt100;
+            const secondCount = numberOfShirts - 100;
+            const thirdCount = secondCount * shirt200;
+            const totalCount = firstCount + thirdCount;
+            return totalCount;
+        } else {
+            const firstCount1 = 100 * shirt100;
+            const firstCount2 = 100 * shirt200;
+            const secondCount1 = numberOfShirts - 200;
+            const thirdCount1 = secondCount1 * shirt300;
+            const totalCount2 = firstCount1 + firstCount2 + thirdCount1;
+            return totalCount2;
+        }
+    }else{
+         //error message
+        return 'Your input is incorrect ,Please input the 0 greater than Number ';
+    }
+}
+// function called
+const totalDeliveryCost = deliveryCost(230);
+// output printed
+console.log(totalDeliveryCost);
+
+/*
+
+4th problem solving (perfectFriend)
+
+*/
+function perfectFriend(friends) {
+
+    const firstFriend = friends;
+
+    for (let i = 0; i < friends.length; i++) {
+        // error message
+        if (!friends.length) {
+            return 'Your input is incorrect ,Please input array String'
+        }
+        if (friends[i].length == 5) {
+            return firstFriend[i];
+        }
+    }
+}
+//function called
+const friendsArray = ['shafikul', 'Rubel', 'shakil', 'Farzana', 'Rahim', 'babu'];
+// output printed
+console.log(perfectFriend(friendsArray));
