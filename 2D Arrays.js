@@ -1,3 +1,4 @@
+//2D Array
 // first array equivalent to rows 
 let a = new Array(3);
 
