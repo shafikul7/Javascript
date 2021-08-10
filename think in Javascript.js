@@ -1,6 +1,8 @@
 // think in Javascript
 
-/* recursion function */
+/* 
+recursion function :- Recursion is a process of calling itself. A function that calls itself is called a recursive function.
+*/
 
 // add calculated recursion function
 function sum(i) {
@@ -9,7 +11,7 @@ function sum(i) {
     }
     return sum(i - 1) + i;
 }
-// console.log(sum(10));
+console.log(sum(10));
 
 // factorial calculated recursion function
 function factorial(fact) {
