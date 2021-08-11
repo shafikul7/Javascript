@@ -21,3 +21,16 @@ function factorial(fact) {
     return factorial(fact - 1) * fact;
 }
 console.log(factorial(5));
+
+// fibonacci series calculated recursion function 
+function fibonacci(fibo) {
+    if (fibo == 0) {
+        return 0;
+    }
+    if (fibo == 1) {
+        return 1;
+    }
+    
+    return fibonacci(fibo - 1) + fibonacci(fibo - 2);
+}
+console.log(fibonacci(6));
