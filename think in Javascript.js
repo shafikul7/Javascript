@@ -59,6 +59,86 @@ for(let x in students) {
 }
 
 
+// Find the matching product by searching products
+const products = [{
+        name: 'Mi note 5 pro phone',
+        price: 24000
+    },
+    {
+        name: 'Mi note 6 pro phone',
+        price: 28000
+    },
+    {
+        name: 'Nokia 1200',
+        price: 4000
+    },
+    {
+        name: ' Vivo A3 phone',
+        price: 24000
+    },
+    {
+        name: 'Max pro 1A',
+        price: 24000
+    }
+];
+
+
+function searchProducts(products, searchText) {
+    const matched = [];
+    for (const product of products) {
+        const name = product.name;
+        if (name.indexOf(searchText) != -1) {
+            matched.push(product);
+        }
+    }
+    return matched;
+}
+
+const matchedProduct = searchProducts(products, 'phone');
+console.log(matchedProduct);
+
+
+/*
+মনে করো  একটা Array  ভিতরে এলিমেন্ট হিসেবে object থাকবে। তোমার কাজ হচ্ছে একটা ফাংশন লেখা যে ফাংশনের কাজ হচ্ছে কোন একটা Array 
+কে সে ইনপুট হিসেবে নিবে সেই Array ভিতরে object থাকলে সেই objectের প্রপার্টি ও ভ্যালুকে এক্সেস করে তা array আকারে পাঠাবে।
+*/
+// problem solving jam
+
+const person = [{
+        name: 'John',
+        age: 34
+    },
+    {
+        name: 'shafikul',
+        age: 36
+    },
+    {
+        name: 'Rubel',
+        age: 36
+    },
+    {
+        name: 'fahim',
+        age: 36
+    }
+];
+
+function objectAccess(person) {
+    const values = [];
+
+    for (let i = 0; i < person.length; i++) {
+        let text = '';
+        const element = person[i];
+        for (let property in element) {
+            text += property + ' : ' + element[property] + ' ,'
+        }
+        values.push(text);
+    }
+    return values;
+}
+
+console.log(objectAccess(person));
+
+
 
 
 
