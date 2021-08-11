@@ -34,3 +34,31 @@ function fibonacci(fibo) {
     return fibonacci(fibo - 1) + fibonacci(fibo - 2);
 }
 console.log(fibonacci(6));
+
+
+/* 
+For in Loop and For of Loop
+*/
+
+// For of Loop
+const names = ['s1', 's2', 's3', 's12', 123];
+
+    for (const name of names) {
+        console.log(name);
+    }
+
+// For in Loop 
+
+const students={
+    Id : 101,
+    Name : 'Md shafikul islam',
+    CGPA : 3.35
+};
+for(let x in students) {
+    console.log(`${x} : ${students[x]}`);
+}
+
+
+
+
+
