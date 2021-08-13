@@ -11,7 +11,7 @@ function sum(i) {
     }
     return sum(i - 1) + i;
 }
-console.log(sum(10));
+// console.log(sum(10));
 
 // factorial calculated recursion function
 function factorial(fact) {
@@ -20,7 +20,7 @@ function factorial(fact) {
     }
     return factorial(fact - 1) * fact;
 }
-console.log(factorial(5));
+// console.log(factorial(5));
 
 // fibonacci series calculated recursion function 
 function fibonacci(fibo) {
@@ -33,7 +33,7 @@ function fibonacci(fibo) {
     
     return fibonacci(fibo - 1) + fibonacci(fibo - 2);
 }
-console.log(fibonacci(6));
+// console.log(fibonacci(6));
 
 
 /* 
@@ -95,7 +95,7 @@ function searchProducts(products, searchText) {
 }
 
 const matchedProduct = searchProducts(products, 'phone');
-console.log(matchedProduct);
+// console.log(matchedProduct);
 
 
 
