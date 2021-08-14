@@ -44,3 +44,27 @@ var parent = firstHeading.parentNode;
 
 // insert newHeading before FirstHeading
 parent.insertBefore(newHeading, firstHeading);
+
+
+// 
+const newButton = document.getElementById("buttonJs1");
+newButton.onclick = makeButtonClick;
+
+function makeButtonClick() {
+    document.body.style.backgroundColor = "red";
+}
+
+const newButton1 = document.getElementById("buttonJs2");
+newButton1.onclick = function () {
+    document.body.style.backgroundColor = "green";
+}
+
+document.getElementById("buttonJs3").addEventListener("click", function () {
+    document.body.style.backgroundColor = "yellow"
+})
+
+
+function functionOne() {
+    const onOne1 = document.getElementById("cking");
+    onOne1.innerText = 'set by using by function';
+}
