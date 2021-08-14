@@ -54,17 +54,28 @@ function makeButtonClick() {
     document.body.style.backgroundColor = "red";
 }
 
+// 
 const newButton1 = document.getElementById("buttonJs2");
 newButton1.onclick = function () {
     document.body.style.backgroundColor = "green";
 }
 
+// 
 document.getElementById("buttonJs3").addEventListener("click", function () {
     document.body.style.backgroundColor = "yellow"
 })
 
-
+// 
 function functionOne() {
     const onOne1 = document.getElementById("cking");
     onOne1.innerText = 'set by using by function';
 }
+// 
+document.getElementById("delete-confirm").addEventListener('keyup', function (event) {
+    const deleteBtn = document.getElementById("delete-btn");
+    if (event.target.value == 'delete') {
+        deleteBtn.removeAttribute('disabled');
+    } else {
+        deleteBtn.setAttribute('disabled', true);
+    }
+});
