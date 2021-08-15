@@ -79,3 +79,17 @@ document.getElementById("delete-confirm").addEventListener('keyup', function (ev
         deleteBtn.setAttribute('disabled', true);
     }
 });
+
+// 
+document.getElementById("login-Submit").addEventListener("click", function () {
+    //get user gmail
+    const emailField = document.getElementById("user-gmail");
+    const userEmail = emailField.value;
+    //get user password
+    const passwordField = document.getElementById("user-password");
+    const userPassword = passwordField.value;
+    // condition
+    if (userEmail == 'shafikul@gmail.com' && userPassword == '123') {
+        window.location.href = 'banking.html';
+    }
+})
