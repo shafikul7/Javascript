@@ -80,7 +80,6 @@ document.getElementById("delete-confirm").addEventListener('keyup', function (ev
     }
 });
 
-// 
 document.getElementById("login-Submit").addEventListener("click", function () {
     //get user gmail
     const emailField = document.getElementById("user-gmail");
