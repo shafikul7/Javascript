@@ -92,3 +92,44 @@ document.getElementById("login-Submit").addEventListener("click", function () {
         window.location.href = 'banking.html';
     }
 })
+
+
+//banking
+// bank user
+const depositAmount = document.getElementById("deposit-btn").addEventListener('click', function () {
+    // input depositAmount
+    const depositAmountInput = document.getElementById("depositInput");
+    const depositAmountInputText = depositAmountInput.value;
+    const previousDepositInput = parseFloat(depositAmountInputText)
+    // current deposit
+    const depositInputAccount = document.getElementById("depositTotal");
+    const depositText = depositInputAccount.innerText;
+    const previousDeposit = parseFloat(depositText);
+    depositInputAccount.innerText = previousDeposit + previousDepositInput;
+    // balance update
+    const balanceUpdate = document.getElementById("balance-total");
+    const balanceTotalText = balanceUpdate.innerText;
+    const previousDepositBalance = parseFloat(balanceTotalText);
+    balanceUpdate.innerText = previousDepositInput + previousDepositBalance;
+    // clear input field
+    depositAmountInput.value = ' ';
+});
+// withdraw
+const withdrawAmount = document.getElementById("withdraw-btn").addEventListener("click", function () {
+    const withdrawAmountInput = document.getElementById("withdrawInput");
+    const withdrawAmountText = withdrawAmountInput.value;
+    const previousWithdrawBalance = parseFloat(withdrawAmountText);
+    // withdraw current deposit
+    const withdrawInputAmount = document.getElementById("withdrawTotal");
+    const withdrawAmountInnerText = withdrawInputAmount.innerText;
+    const previousWithdrawNumber = parseFloat(withdrawAmountInnerText);
+    withdrawInputAmount.innerText = previousWithdrawNumber + previousWithdrawBalance;
+    // balance update
+    const balanceUpdate = document.getElementById("balance-total");
+    const balanceTotalText = balanceUpdate.innerText;
+    const previousDepositBalance = parseFloat(balanceTotalText);
+    balanceUpdate.innerText = previousDepositBalance - previousWithdrawBalance;
+    // clear input field
+    withdrawAmountInput.value = ' ';
+
+});
