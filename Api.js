@@ -106,14 +106,6 @@ const restCountriesApi = () => {
 
 const restApiShow = (data) => {
     const counterDiv = document.getElementById('restCountries')
-    // for (const counter of data) {
-    //     counterDiv.innerHTML = `
-    //     <h2> ${counter.name}</h2>
-    //     <h3> ${counter.region}</h3>
-    //     <p> ${counter.area}</p>
-    //     `
-    //     console.log(counter.name);
-    // }
     data.forEach(counter => {
         counterDiv.innerHTML = `
             <h2> ${counter.name}</h2>
