@@ -11,7 +11,7 @@
      const ul = document.getElementById('users')
      for (const user of data) {
          const li = document.createElement('li');
-         li.innerText = `name: ${user.name} gmail : ${user.gmail}`;
+         li.innerText = `name: ${user.name} gmail : ${user.gmail} phoneNumber : ${user.phone}`;
          ul.appendChild(li);
      }
  }
