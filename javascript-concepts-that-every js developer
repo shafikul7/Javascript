@@ -1,1 +1,27 @@
 
+JavaScript concepts that every JavaScript Programmer must know
+
+1. JavaScript Prototype,Prototype Chain
+2. JavaScript(ES6) Classes & Objects,This KeyWord
+3. IIFE(Immediately Invoked Function Expression)
+4.understanding Scope
+5. JavaScript Closures
+6. The Module Pattern
+7. Hoisting
+8. Currying
+9. Memoization
+10. The apply, call, and bind methods
+11. Polymorphism,Inheritance in JavaScript
+12. Asynchronous Js
+13. Callback Function,Promises
+14. Understand Promises
+15. Async & Await(Callback vs Promises vs Async Await)
+16.Array Methods Explained:Filter vs Map vs Reduce vs ForEach vs Find(For of and For in)
+17.Event Loop,Js Engines
+18.Value type and reference type
+19.setTimeout and setInterval
+20.JavaScript Window Object Methods
+21.Dom Event
+22.XML HTTP Request Methods,Get,Post,Understanding And Using REST APIs
+23.Destructuring assignment(object,Array)
+
