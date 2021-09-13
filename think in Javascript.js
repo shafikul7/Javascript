@@ -155,6 +155,6 @@ const combined = first.concat(second);
 console.log(combined);
 
 
-
+// Closures
 
 
