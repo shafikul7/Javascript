@@ -53,21 +53,21 @@ console.log(lastName);
 
 //অবজেক্ট ডিষ্ট্রাচারিং
 
-// const company = {
-//   name: "google",
-//   ceo: "Sundar Pichai",
-//   ceoSalary: 2500,
+const company = {
+  name: "google",
+  ceo: "Sundar Pichai",
+  ceoSalary: 2500,
 
-//   friends: [
-//     {
-//       name: "salam",
-//       age: 13,
-//     },
-//     "borkot",
-//     "shofik",
-//     "jobbar",
-//   ],
-// };
+  friends: [
+    {
+      name: "salam",
+      age: 13,
+    },
+    "borkot",
+    "shofik",
+    "jobbar",
+  ],
+};
 
 const apple = {
     productName: "apple",
