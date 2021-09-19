@@ -30,6 +30,19 @@ console.log(result);
 const sum = (num1, num2) => num1 + num2; //এক লাইনে অ্যারো function
 console.log(sum(10, 20));
 
+// Basic syntax with multiple parameters
+const add = (a, b) => { return a + b };
+
+// Curly brackets aren’t required if only one expression is present
+// The `return` keyword is also implicit and can be ommited
+const add = (a, b) => a + b;
+
+// Parentheses are optional when only one parameter is present
+const getUser = data => data.user;
+
+// However, parentheses are required when no parameters are present
+const hello = () => console.log("Hello from AlterClass.io");
+
 //স্প্রেড অপারেটর  কিভাবে লিখবো ...
 
 const numbers = [1, 22, 52, 36, 41, 89, 101, 56];
