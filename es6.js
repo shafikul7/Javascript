@@ -2,7 +2,8 @@
 
 const result = `amar shonar bangla   
 ami tomai valobashi
-chirodin tomar akash tomar batash`; //মাল্টিলাইন  কোনো কোনকেট ছাড়াই
+chirodin tomar akash
+tomar batash`;  //মাল্টিলাইন  কোনো কোনকেট ছাড়াই
 
 console.log(result);
 
