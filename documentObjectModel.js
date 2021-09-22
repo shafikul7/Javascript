@@ -209,6 +209,7 @@ obj.map(function(num) {
 // null  অথবা  undefine  এর  উপর  কিছু  সেট করতে গেলে  টাইপ এরর  দিবে ; কারণ  null  একটা  ভ্যালিড  অবজেক্ট  না 
 
 
+
 // >TypeError: Cannot read property 'map' of undefined
 const a= undefined;
 
@@ -216,8 +217,6 @@ a.map(pd=>pd);
 
 a=null;
 a.map(pd=>pd)
-
-
 
 
 try{
