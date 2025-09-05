@@ -264,7 +264,7 @@ var result = multi_array_sum( a );
 console.log( result );
 
 var arraySum = 0;
-var b = [ [3,4,5], 6, 7, 8, [9, [10,11,[12,13]]]];
+var b = [ [3,4,5], 6, 7, 8, [9, [10,11,[12,14]]]];
 var result = multi_array_sum( b );
 console.log( result );
 
