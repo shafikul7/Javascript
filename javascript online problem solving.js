@@ -1,7 +1,7 @@
-// javascript online problem solving
-//[2, 5, 7, 9]
 
-//[9, 7, 5, 2]
+//input [2, 5, 7, 9]
+
+//output [9, 7, 5, 2]
 
 function getSecondLargest(nums) {
     
