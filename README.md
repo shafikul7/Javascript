@@ -1,3 +1,3 @@
 
-Javascript code practice
+## JavaScript code practice
 
